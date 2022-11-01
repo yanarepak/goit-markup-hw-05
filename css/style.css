@@ -143,14 +143,14 @@ img {
     display: block;
     position: relative;
     top: 38px;
-    width: 48px;
+    width: 100%;
     height: 4px;
     background-color: var(--accent-color);
     border-radius: 2px;
 }
 
 .current.second::after {
-    width: 78px;
+    width: 100%;
 }
 
 .site-nav .link.current{
