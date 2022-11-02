@@ -113,6 +113,8 @@ img {
 
 .site-nav{
     display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .site-nav .item + .item{
@@ -142,7 +144,7 @@ img {
     content: '';
     display: block;
     position: relative;
-    top: 38px;
+    top: 33px;
     width: 100%;
     height: 4px;
     background-color: var(--accent-color);
@@ -161,6 +163,8 @@ img {
     display: flex;
     align-items: center;
     margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
     transition: color var(--transition-dur-and-func);
 }
 
@@ -191,10 +195,13 @@ img {
     align-items: center;
 }
 
+.navigation-header .logo{
+    padding-top: 24px ;
+    padding-bottom: 25px;
+}
+
 .page-header{
-   padding-top: 32px;
-   padding-bottom: 32px;
-   border: 1px solid #ECECEC;
+   border-bottom: 1px solid #ECECEC;
 }
 
 .page-header-container{
@@ -204,6 +211,7 @@ img {
 
 .nav-mail-icon,
 .nav-tel-icon{
+    align-self: center;
     margin-right: 10px;
     fill: var(--primary-text-color);
     
@@ -224,7 +232,10 @@ img {
 /* ===================================ГЕРОЙ========================== */
 .hero-background{
     background-color: var(--secondary-fond-color);
+    max-width: 1600px;
+    margin: auto; 
 }
+
 .hero{
     text-align: center;
     background-color: #C4C4C4;
@@ -532,7 +543,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     column-gap: 10px;
 }
 
@@ -581,12 +592,12 @@ img {
     letter-spacing: 0.06em;
 }
 
-.projects-list-item{
+.project-link{
     transition: box-shadow var(--transition-dur-and-func);
 }
 
-.projects-list-item:hover,
-.project-list-item:focus{
+.project-link:hover,
+.project-link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
     0px 4px 4px rgba(0, 0, 0, 0.06), 
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -677,6 +688,10 @@ img {
     flex-direction: column;
     row-gap: 9px;
 }
+
+/* .address-nav-list .address-item + .address-item{
+    padding-bottom: 9px;
+} */
 
 .address-mail,
 .address-tel{
@@ -795,6 +810,14 @@ img {
     background-color: var(--fond-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0; 
+    cursor: pointer;
+
+    transition: fill var(--transition-dur-and-func);
+}
+
+.modal-close-btn:hover .modal-close-btn-icon,
+.modal-close-btn:focus .modal-close-btn-icon{
+    fill: var(--accent-color);
 }
 
 .backdrop.is-hidden{
