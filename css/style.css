@@ -593,6 +593,7 @@ img {
 }
 
 .project-link{
+    display: block;
     transition: box-shadow var(--transition-dur-and-func);
 }
 
